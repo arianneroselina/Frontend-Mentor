@@ -1,0 +1,62 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+}
+
+#main-heading {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+#insights {
+    color: hsl(277, 64%, 61%);
+}
+
+#main-paragraph {
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 20vw;
+    width: 70vw;
+    border-radius: 2%;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.stat-headings {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+}
+
+.stats {
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.attribution {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    width: 99%;
+    bottom: 5px;
+    text-align: center;
+}

@@ -28,18 +28,19 @@ body {
 .stats {
     font-weight: bold;
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 27px;
 }
 
 @media screen and (max-width: 2000px) {
     .card {
+        z-index: -1;
         position: fixed;
         top: 50%;
         left: 50%;
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
-        height: 25vw;
-        width: 70vw;
+        height: 22vw;
+        width: 55vw;
         border-radius: 1%;
         background-color: hsl(244, 38%, 16%);
     }
@@ -57,17 +58,31 @@ body {
     }
 
     .text {
+        position: fixed;
         text-align: left;
-        width: 10vw;
-        margin-left: 20vw;
-        margin-top: 15vw;
+        width: 20vw;
+        left: 24%;
+        top: 47%;
+        transform: translate(-50%, -50%);
+    }
+
+    .image {
+        transform: scaleY(0.94);
+        float: right;
+        transform-origin: right top;
+        background-color: hsl(277, 64%, 61%);
+    }
+
+    img {
+        border-radius: 1%;
+        opacity: 0.5;
     }
 
     .attribution {
         font-family: 'Inter', sans-serif;
         position: absolute;
         width: 99%;
-        bottom: 5px;
+        bottom: 8px;
         text-align: center;
     }
 }

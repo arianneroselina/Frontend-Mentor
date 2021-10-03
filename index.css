@@ -15,48 +15,59 @@ body {
 #main-paragraph {
     font-family: 'Inter', sans-serif;
     color: hsla(0, 0%, 100%, 0.75);
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card {
-    height: 20vw;
-    width: 70vw;
-    border-radius: 2%;
-    background-color: hsl(244, 38%, 16%);
+    font-size: 15px;
 }
 
 .stat-headings {
     color: hsla(0, 0%, 100%, 0.6);
     font-family: 'Lexend Deca', sans-serif;
     text-transform: uppercase;
+    font-size: 15px;
 }
 
 .stats {
     font-weight: bold;
     font-family: 'Inter', sans-serif;
+    font-size: 15px;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
-}
+@media screen and (max-width: 2000px) {
+    .card {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+        height: 25vw;
+        width: 70vw;
+        border-radius: 1%;
+        background-color: hsl(244, 38%, 16%);
+    }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    } 
 
-.attribution {
-    font-family: 'Inter', sans-serif;
-    position: absolute;
-    width: 99%;
-    bottom: 5px;
-    text-align: center;
+    .column {
+        float: left;
+        width: 33.33%;
+    }
+
+    .text {
+        text-align: left;
+        width: 10vw;
+        margin-left: 20vw;
+        margin-top: 15vw;
+    }
+
+    .attribution {
+        font-family: 'Inter', sans-serif;
+        position: absolute;
+        width: 99%;
+        bottom: 5px;
+        text-align: center;
+    }
 }
